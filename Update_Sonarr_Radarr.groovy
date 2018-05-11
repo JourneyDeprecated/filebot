@@ -26,7 +26,7 @@ if (db.equals('TheTVDB')) {
     ).text
 }
 
-// Radarr API Configuration (Currently doesn't work since filebot doesn't passes theMovieDB as blank)
+// Radarr API Configuration (Currently doesn't work since filebot passes theMovieDB as blank)
 if (db.equals('TheMovieDB')) {
     def url = new URL('http://localhost:7878')
     def header = ['X-Api-Key': '']
