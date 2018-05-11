@@ -128,31 +128,31 @@ command = [
 ### Do Not Edit Beyond This Point ###
 
 if MVLEnabled == "true":
-  command += ['--def', 'minLengthMS=' + MINLENGTHMS]
+  command += ['minLengthMS=' + MINLENGTHMS]
 if MFSEnabled == "true":
-  command += ['--def', 'minFileSize=' + MINFILESIZE]
+  command += ['minFileSize=' + MINFILESIZE]
 if MUSIC == "true":
-  command += ['--def', 'music=' + MUSIC]
+  command += ['music=' + MUSIC]
 if SUBEnabled == "true":
-  command += ['--def', 'subtitles=' + SUBTITLES]
+  command += ['subtitles=' + SUBTITLES]
 if ARTWORK == "true":
-  command += ['--def', 'artwork=' + ARTWORK]
+  command += ['artwork=' + ARTWORK]
 if EXTRAS == "true":
-  command += ['--def', 'extras=' + EXTRAS]
+  command += ['extras=' + EXTRAS]
 if KODIEnabled == "true":
-  command += ['--def', 'kodi=' + KODI]
+  command += ['kodi=' + KODI]
 if PLEXEnabled == "true":
-  command += ['--def', 'plex=' + PLEX]
+  command += ['plex=' + PLEX]
 if EMBYEnabled == "true":
-  command += ['--def', 'emby=' + EMBY]
+  command += ['emby=' + EMBY]
 if STOREREPORT == "true":
-  command += ['--def', 'storeReport=' + STOREREPORT]
+  command += ['storeReport=' + STOREREPORT]
 if SKIPEXTRACT == "true":
-  command += ['--def', 'skipExtract=' + SKIPEXTRACT]
+  command += ['skipExtract=' + SKIPEXTRACT]
 if CLEAN == "true":
-  command += ['--def', 'clean=' + CLEAN]
+  command += ['clean=' + CLEAN]
 if DELETEAFTEREXTRACT == "true":
-  command += ['--def', 'deleteAfterExtract=' + DELETEAFTEREXTRACT]
+  command += ['deleteAfterExtract=' + DELETEAFTEREXTRACT]
 if SREnabled == "true":
   command += ['exec=filebot -script ' + SonarrRadarr + ' --def db={info.database} id={id}']
 
