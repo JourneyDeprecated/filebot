@@ -154,7 +154,7 @@ if CLEAN == "true":
 if DELETEAFTEREXTRACT == "true":
   command += ['deleteAfterExtract=' + DELETEAFTEREXTRACT]
 if SREnabled == "true":
-  command += ['exec=filebot -script ' + SonarrRadarr + ' --def db={info.database} id={id}']
+  command += ['exec=filebot -script ' + SonarrRadarr + ' --def type={type} id={id}']
 
 # execute command (and hide cmd window)
 subprocess.run(command, creationflags=0x08000000)

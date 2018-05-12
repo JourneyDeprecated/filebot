@@ -1,11 +1,11 @@
 // TVDB/TMDB ID
 def id = id as int
 
-// database
-def db = db
+// Video Type
+def type = type
 
 // Sonarr API Configuration
-if (db.equals('TheTVDB')) {
+if (type.equals('Episode')) {
     def url = new URL('http://localhost:8989')
     def header = ['X-Api-Key': '']
 
@@ -26,8 +26,8 @@ if (db.equals('TheTVDB')) {
     ).text
 }
 
-// Radarr API Configuration (Currently doesn't work since filebot passes theMovieDB as blank)
-if (db.equals('TheMovieDB')) {
+// Radarr API Configuration
+if (type.equals('Movie')) {
     def url = new URL('http://localhost:7878')
     def header = ['X-Api-Key': '']
 
