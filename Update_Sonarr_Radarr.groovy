@@ -5,7 +5,7 @@ def id = id as int
 def type = type
 
 // Sonarr API Configuration
-if (type.equals('Episode')) {
+if (type =~ /Episode/) {
     def url = new URL('http://localhost:8989')
     def header = ['X-Api-Key': 'PLACEAPIKEYHERE']
 
@@ -27,7 +27,7 @@ if (type.equals('Episode')) {
 }
 
 // Radarr API Configuration
-if (type.equals('Movie')) {
+if (type =~ /Movie/) {
     def url = new URL('http://localhost:7878')
     def header = ['X-Api-Key': 'PLACEAPIKEYHERE']
 
