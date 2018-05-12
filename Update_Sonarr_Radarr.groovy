@@ -7,7 +7,7 @@ def type = type
 // Sonarr API Configuration
 if (type.equals('Episode')) {
     def url = new URL('http://localhost:8989')
-    def header = ['X-Api-Key': '']
+    def header = ['X-Api-Key': 'PLACEAPIKEYHERE']
 
     def sonarrSeriesId = new JsonSlurper()
         .parseText(new URL(url, '/api/series')
@@ -29,7 +29,7 @@ if (type.equals('Episode')) {
 // Radarr API Configuration
 if (type.equals('Movie')) {
     def url = new URL('http://localhost:7878')
-    def header = ['X-Api-Key': '']
+    def header = ['X-Api-Key': 'PLACEAPIKEYHERE']
 
     def radarrMovieId = new JsonSlurper()
         .parseText(new URL(url, '/api/movie')
